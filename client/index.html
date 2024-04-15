@@ -4,19 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Together</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./home.css" />
+    <script src="https://kit.fontawesome.com/958e18979f.js" crossorigin="anonymous"></script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3392511, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-        </ul>
-      </nav>
+        <a href="index.html"><img class="header-logo" src="images/logos/logo-no-background.png" alt="Fitness Together company logo"></a>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html"><spanclass="active">Home</spanclass=></a></li>
+                <li><a href="wom-jack-list.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </header>
     <main class="index-main">
       <div class="posts-list"></div>
     </main>
+    <script src="./script.js" type="module"></script>
     <script src="./home.js" type="module"></script>
   </body>
 </html>
