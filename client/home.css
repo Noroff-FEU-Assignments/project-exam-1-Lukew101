@@ -1,0 +1,58 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+}
+
+.latest-posts-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-post {
+  flex: 0 0 auto;
+  width: 300px; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prev-button {
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.next-button {
+ margin-left: 20px;
+ cursor: pointer;
+ font-size: 25px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest-posts-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}

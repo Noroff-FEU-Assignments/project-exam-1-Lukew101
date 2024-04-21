@@ -24,9 +24,9 @@
         <nav class="header-nav">
             <ul>
                 <li><a href="index.html"><spanclass="active">Home</spanclass=></a></li>
-                <li><a href="wom-jack-list.html">Blogs</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="./blogs/blog-list.html">Blogs</a></li>
+                <li><a href="./about/about.html">About</a></li>
+                <li><a href="./contact/contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="burger-menu">
@@ -35,9 +35,63 @@
             <div class="line3"></div>
         </div>
     </header>
-    <main class="index-main">
-      <div class="posts-list"></div>
+    <main>
+      <section class="home-top-section">
+          <div class="main-title-slogan">
+            <h1>Welcome to Fitness Together</h1>
+            <p>Let's get in shape together</p>
+          </div>
+          <div class="main-top-description">
+            <p>At Fitness Together, we believe that it is important to help others by sharing valuable information. Whether you want to lose weight, build muscle, stay in shape or just learn more about health and fitness, you have found the right place. So check out our wensite and let's get fit together!</p>
+            <a href="about.html">Learn more</a>
+          </div>
+          <div class="main-top-image">
+            <img src="images/hero-image.jpg" alt="A group of people working out together">
+          </div>
+      </section>
+      <section class="main-blog-section">
+        <div class="blog-information-wrapper">
+          <div class="blog-section-title-description-wrapper">
+            <h2>Fitness Blogs</h2>
+            <p>At Fitness Together, we want to offer the most relevant and up to date blogs for people to learn from.</p>
+            <a href="./blogs/blog-list.html">View all blogs</a>
+          </div>
+          <div>
+            <img src="images/blog-image.jpg" alt="A person writing in a notebook">
+          </div>
+        </div>
+        <div class="latest-posts-wrapper">
+          <h2>Latest Posts</h2>
+          <div class="carousel-wrapper">
+            <div class="prev-button"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="latest-posts-carousel"></div>
+            <div class="next-button"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-logo">
+        <img src="images/logos/logo-no-background.png" alt="Fitness Together company logo">
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wom-jack-list.html">Blogs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-media">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="footer-contact">
+        <p>Phone: 123-456-7890</p>
+        <p>Email:</p>
+      </div>
+    </footer>
     <script src="./script.js" type="module"></script>
     <script src="./home.js" type="module"></script>
   </body>
