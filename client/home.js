@@ -9,13 +9,11 @@ const nextButton = document.querySelector(".next-button");
 
 let currentIndex = 0;
 
-// Should fetch most recent posts. Currently just fetches first page with no specified order.
-
 async function fetchLatestPosts(url) {
   try {
     const response = await fetch(url);
     posts = await response.json();
-    showLatestPosts(currentIndex, currentIndex + 4);
+    showLatestPosts(currentIndex, currentIndex + 10);
   } catch (error) {
     console.error("Error fetching posts:", error);
   }
@@ -41,10 +39,15 @@ function showLatestPosts(startIndex, endIndex) {
 
     const contentElement = document.createElement("p");
     contentElement.innerHTML = post.content.rendered;
+    contentElement.classList.add("carousel-content");
+
+    const postedDateElement = document.createElement("p");
+    postedDateElement.innerHTML = `Posted on: ${post.date}`;
 
     postElement.appendChild(titleElement);
     postElement.appendChild(imageElement);
     postElement.appendChild(contentElement);
+    postElement.appendChild(postedDateElement);
 
     latestPostsCarousel.appendChild(postElement);
   }
@@ -52,12 +55,12 @@ function showLatestPosts(startIndex, endIndex) {
 
 nextButton.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % posts.length;
-  showLatestPosts(currentIndex, currentIndex + 4);
+  showLatestPosts(currentIndex, currentIndex + 10);
 });
 
 prevButton.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + posts.length) % posts.length;
-  showLatestPosts(currentIndex, currentIndex + 4);
+  showLatestPosts(currentIndex, currentIndex + 10);
 });
 
 fetchLatestPosts(baseUrl);

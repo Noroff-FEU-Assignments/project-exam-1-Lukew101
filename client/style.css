@@ -1,3 +1,8 @@
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -60,7 +65,8 @@ header nav {
   z-index: 100;
 }
 
-.header-logo {
+.header-logo,
+.footer-logo {
   position: relative;
   width: 120px;
   height: auto;
@@ -99,17 +105,21 @@ header nav {
 }
 
 header nav ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 header nav li {
-    font-size: 0.90em;
-    padding: 10px 0 0 5px;
+  font-size: 0.9em;
+  padding: 10px 0 0 5px;
 }
 
 header nav a {
-    display: block;
-    padding: 0 0 20px;
-    font-weight: bold;
+  display: block;
+  padding: 0 0 20px;
+  font-weight: bold;
+}
+
+.footer-logo {
+  width: 120px;
 }
