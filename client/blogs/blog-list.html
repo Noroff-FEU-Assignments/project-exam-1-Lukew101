@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Together</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./blog-list.css" />
-    <script src="https://kit.fontawesome.com/958e18979f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/958e18979f.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-            h._hjSettings = { hjid: 3392511, hjsv: 6 };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script'); r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3392511, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-
+      <a href="../index.html"
+        ><img
+          class="header-logo"
+          src="../images/logos/logo-no-background.png"
+          alt="Fitness Together company logo"
+      /></a>
+      <nav class="header-nav">
+        <ul>
+          <li class="active"><a href="./blog-list.html">Blogs</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </header>
     <main>
       <div class="overlay"></div>
       <section class="blog-list-section">
-        <h2>Fitness Blogs</h2>
-        <p>At Fitness Together, we want to offer the most relevant and up to date blogs for people to learn from.</p>
+        <h1 class="blog-list-section-title">Fitness Blogs</h1>
+        <p class="blog-list-section-paragraph">
+          At Fitness Together, we want to offer the most relevant and up to date
+          blogs for people to learn from. You can discover the latest trends in fitness and health here. If you have any questions or suggestions, please feel free to contact us <a class="contact-here" href="../contact/contact.html">here</a>.
+        </p>
         <div class="loader"></div>
         <div class="blog-list"></div>
       </section>
     </main>
-    
+
     <script src="./blog-list.js" type="module"></script>
-    <script src="../script.js" type="module"></script> 
-</body>
+    <script src="../script.js" type="module"></script>
+  </body>
 </html>

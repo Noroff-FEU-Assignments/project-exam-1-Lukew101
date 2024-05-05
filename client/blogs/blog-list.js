@@ -1,3 +1,4 @@
+import { createBlogPostElement } from "../utils/createBlogPostElement.js";
 const baseUrl =
   "https://cors.noroff.dev/https://www.trailblaze-jackets.no/wp-json/wp/v2/posts";
 
@@ -11,7 +12,9 @@ function getUrlWithPageCount(page = pageCount) {
 }
 
 const moreBlogsButton = document.createElement("button");
-moreBlogsButton.textContent = "Show more blogs";
+moreBlogsButton.innerHTML = "Show more...";
+moreBlogsButton.classList.add("show-more-button");
+
 moreBlogsButton.addEventListener("click", () => {
   pageCount++;
   moreBlogsButton.remove();
@@ -22,7 +25,6 @@ async function fetchBlogPosts(url) {
   try {
     const response = await fetch(url);
     const posts = await response.json();
-
 
     showBlogPosts(posts);
 
@@ -39,26 +41,9 @@ async function fetchBlogPosts(url) {
 
 function showBlogPosts(posts) {
   for (let post of posts) {
-    const postElement = document.createElement("a");
-    postElement.href = `./specificBlog/blog.html?id=${post.id}`;
-    postElement.classList.add("blog-post");
+    const blogPostElement = createBlogPostElement(post);
 
-    const titleElement = document.createElement("h2");
-    titleElement.textContent = post.title.rendered;
-
-    const imageElement = document.createElement("img");
-    imageElement.alt = post.title.rendered;
-    imageElement.classList.add("blog-image");
-    imageElement.src = post.jetpack_featured_media_url;
-
-    const contentElement = document.createElement("p");
-    contentElement.innerHTML = post.content.rendered;
-
-    postElement.appendChild(titleElement);
-    postElement.appendChild(imageElement);
-    postElement.appendChild(contentElement);
-
-    blogList.appendChild(postElement);
+    blogList.appendChild(blogPostElement);
   }
   loader.classList.remove("loader");
 }
