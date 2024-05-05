@@ -7,7 +7,8 @@ const idCall = params.get("id");
 
 const urlWithId = `${baseUrl}/${idCall}`;
 
-const blogPostSection = document.querySelector(".blog-section");
+const blogPostSection = document.querySelector(".specific-blog-section");
+const loader = document.querySelector(".loader");
 
 async function fetchPost(url) {
   try {
@@ -24,16 +25,18 @@ function showBlogPost(blogPost) {
   blogPostSection.innerHTML = "";
 
   blogPostSection.innerHTML += `
-    <div class="blog-post">
-      <h2>${blogPost.title.rendered}</h2>
-      <img class='blog-image' src="${blogPost.jetpack_featured_media_url}" alt="${blogPost.title.rendered}">
-      <p>${blogPost.content.rendered}</p>
+    <h2 class="specific-blog-title">${blogPost.title.rendered}</h2>
+    <div class="specific-blog-post">
+      <img class='specific-blog-image' src="${blogPost.jetpack_featured_media_url}" alt="${blogPost.title.rendered}">
+      <div class="specific-blog-content">
+        ${blogPost.content.rendered}
+      </div>
     </div>
     <div id="myModal" class="modal">
       <img class="modal-content" id="modalImage" />
     </div>`;
 
-  const blogImg = document.querySelector(".blog-image");
+  const blogImg = document.querySelector(".specific-blog-image");
   const modal = document.getElementById("myModal");
   const modalImg = document.getElementById("modalImage");
 
@@ -51,6 +54,7 @@ function showBlogPost(blogPost) {
   modalImg.addEventListener("click", function (event) {
     event.stopPropagation();
   });
+  loader.classList.remove("loader");
 }
 
 fetchPost(urlWithId);
