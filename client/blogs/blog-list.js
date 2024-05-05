@@ -4,6 +4,7 @@ const baseUrl =
 let pageCount = 1;
 
 const blogList = document.querySelector(".blog-list");
+const loader = document.querySelector(".loader");
 
 function getUrlWithPageCount(page = pageCount) {
   return `${baseUrl}?&page=${page}`;
@@ -21,6 +22,8 @@ async function fetchBlogPosts(url) {
   try {
     const response = await fetch(url);
     const posts = await response.json();
+
+
     showBlogPosts(posts);
 
     const nextPageResponse = await fetch(getUrlWithPageCount(pageCount + 1));
@@ -31,7 +34,7 @@ async function fetchBlogPosts(url) {
     }
   } catch (error) {
     console.error("Error fetching posts:", error);
-  }
+  } 
 }
 
 function showBlogPosts(posts) {
@@ -57,6 +60,7 @@ function showBlogPosts(posts) {
 
     blogList.appendChild(postElement);
   }
+  loader.classList.remove("loader");
 }
 
 fetchBlogPosts(getUrlWithPageCount());
