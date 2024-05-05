@@ -1,6 +1,6 @@
-export const createBlogPostElement = (post) => {
+export const createBlogPostElement = (post, href) => {
   const postElement = document.createElement("a");
-  postElement.href = `./blogs/specificBlog/blog.html?id=${post.id}`;
+  postElement.href = `${href}`;
   postElement.classList.add("blog-post");
 
   const titleElement = document.createElement("h4");

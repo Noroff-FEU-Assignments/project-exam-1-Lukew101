@@ -27,7 +27,10 @@ function showLatestPosts(startIndex, endIndex) {
     const postIndex = i % posts.length;
     const post = posts[postIndex];
 
-    const blogPostElement = createBlogPostElement(post);
+    const postId = post.id;
+    const posthref = `./blogs/specificBlog/blog.html?id=${postId}`;
+
+    const blogPostElement = createBlogPostElement(post, posthref);
 
     latestPostsCarousel.appendChild(blogPostElement);
   }

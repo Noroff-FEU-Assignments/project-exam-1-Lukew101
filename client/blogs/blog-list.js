@@ -41,7 +41,10 @@ async function fetchBlogPosts(url) {
 
 function showBlogPosts(posts) {
   for (let post of posts) {
-    const blogPostElement = createBlogPostElement(post);
+    const postId = post.id;
+    const posthref = `./specificBlog/blog.html?id=${postId}`;
+
+    const blogPostElement = createBlogPostElement(post, posthref);
 
     blogList.appendChild(blogPostElement);
   }
