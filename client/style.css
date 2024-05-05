@@ -28,9 +28,7 @@ p, a {
   font-family: 'Times New Roman', Times, serif
 }
 
-a,
-ul,
-li {
+a, ul, li {
   text-decoration: none;
   list-style: none;
   color: black;
@@ -38,6 +36,23 @@ li {
 
 p {
   margin: 0;
+}
+
+.overlay{
+  position: fixed;
+  display: none;
+  background-color: rgba(0,0,0,0.8);
+  left: 0;
+  right: 0;
+  top: 60px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  transition: 300ms;
+}
+
+.overlay-opn{
+  display: block;
 }
 
 /* Header */
@@ -54,8 +69,9 @@ header {
   z-index: 1000;
 }
 
-nav li {
-  color: white;
+nav li a {
+  color: #14293a;
+  font-size: 1.4rem;
 }
 
 header nav {
@@ -181,6 +197,7 @@ footer p {
 
   header nav li:hover {
     text-decoration: underline;
+    color: #d5d4cf;
   }
 
   header nav a {
