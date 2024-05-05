@@ -1,6 +1,44 @@
 h3 {
   text-align: center;
 }
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h2,
+h3 {
+  color: #14293a;
+}
+
 /* Home Page top section */
 .home-title-slogan {
   margin: 20px 10px;
@@ -16,9 +54,9 @@ h3 {
 .home-top-description,
 .home-blog-section-image {
   width: 90%;
-  max-width: 600px;
   margin: 5px 10px;
   border-radius: 10px;
+  max-height: 600px;
 }
 
 .latest-posts-wrapper {
@@ -29,7 +67,7 @@ h3 {
 
 .home-top-section,
 .home-blog-section,
-.fitness-blog-image-description { 
+.fitness-blog-image-description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +87,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  max-width: 800px;
 }
 
 .blog-div-description-button {
@@ -60,9 +99,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  margin-bottom: 20px;
-  margin: 10px;
+  gap: 15px;
+  margin: 15px 10px;
 }
 
 .home-top-description-image {
@@ -76,11 +114,9 @@ h3 {
 .blog-section-button {
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: #b8860b; 
+  background-color: #b8860b;
   color: #14293a;
-  font-size: 15px;
   cursor: pointer;
-  font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -92,13 +128,28 @@ h3 {
 
 .home-image-section-seperator {
   width: 100%;
-  margin: 20px 0;
-  border-radius: 10px;
   max-height: 600px;
+  filter: brightness(30%);
 }
 
 .home-blog-section-image {
   margin: 20px 10px;
+  max-width: 800px;
+}
+
+.seperator-div {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.seperator-div-quote {
+  display: none;
+}
+
+.latest-posts-text {
+  margin-bottom: gap;
 }
 
 /* Latest blogs Carousel */
@@ -117,6 +168,10 @@ h3 {
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-post > * {
+  margin-bottom: 10px;
 }
 
 .next-button {
@@ -160,7 +215,35 @@ h3 {
   overflow: hidden;
 }
 
+.carousel-post-title {
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 1054px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p {
+    line-height: 1.5rem;
+  }
+
   .latest-posts-carousel {
     overflow: hidden;
   }
@@ -182,11 +265,57 @@ h3 {
   .home-top-description-image,
   .fitness-blog-image-description {
     flex-direction: row-reverse;
-    max-width: 1240px;
+    margin-bottom: 20px;
+  }
+
+  .fitness-blog-image-description > * {
+    flex: 1;
+  }
+
+  .home-image-section-seperator {
+    flex: 0.5;
+  }
+
+  .seperator-div {
+    min-height: 500px;
+  }
+
+  .seperator-div-quote {
+    display: block;
+    background-color: rgba(3, 5, 7, 0.92);
+    flex: 0.5;
+    color: #b6b7b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seperator-div-quote h4 {
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 300px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: 1360px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+  }
+
   .latest-posts-carousel {
     max-width: 1270px;
   }

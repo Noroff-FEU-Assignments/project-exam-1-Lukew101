@@ -29,7 +29,8 @@ function showLatestPosts(startIndex, endIndex) {
     postElement.href = `./blogs/specificBlog/blog.html?id=${post.id}`;
     postElement.classList.add("carousel-post");
 
-    const titleElement = document.createElement("h2");
+    const titleElement = document.createElement("h4");
+    titleElement.classList.add("carousel-post-title");
     titleElement.textContent = post.title.rendered;
 
     const imageElement = document.createElement("img");
@@ -42,7 +43,8 @@ function showLatestPosts(startIndex, endIndex) {
     contentElement.classList.add("carousel-content");
 
     const postedDateElement = document.createElement("p");
-    postedDateElement.innerHTML = `Posted on: ${post.date}`;
+    const dateTimeArray = post.date.split("T");
+    postedDateElement.innerHTML = `Posted on ${dateTimeArray[0]} at ${dateTimeArray[1]}`;
 
     postElement.appendChild(titleElement);
     postElement.appendChild(imageElement);
