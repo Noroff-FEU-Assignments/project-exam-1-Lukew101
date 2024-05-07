@@ -12,8 +12,8 @@ export const createBlogPostElement = (post, href) => {
   imageElement.classList.add("blog-post-image");
   imageElement.src = post.jetpack_featured_media_url;
 
-  const contentElement = document.createElement("p");
-  contentElement.innerHTML = post.content.rendered;
+  const contentElement = document.createElement("div");
+  contentElement.innerHTML = post.excerpt.rendered;
   contentElement.classList.add("blog-post-content");
 
   const postedDateElement = document.createElement("p");

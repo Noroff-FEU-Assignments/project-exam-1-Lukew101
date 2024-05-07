@@ -22,29 +22,29 @@ async function fetchPost(url) {
 }
 
 function showBlogPost(blogPost) {
+  document.title = `Fitness Together | ${blogPost.title.rendered}`;
   blogPostSection.innerHTML = "";
 
   blogPostSection.innerHTML += `
     <h2 class="specific-blog-title">${blogPost.title.rendered}</h2>
     <div class="specific-blog-post">
-      <img class='specific-blog-image' src="${blogPost.jetpack_featured_media_url}" alt="${blogPost.title.rendered}">
-      <div class="specific-blog-content">
         ${blogPost.content.rendered}
-      </div>
     </div>
     <div id="myModal" class="modal">
       <img class="modal-content" id="modalImage" />
     </div>`;
 
-  const blogImg = document.querySelector(".specific-blog-image");
+  const blogImages = document.querySelectorAll(".specific-blog-section img");
   const modal = document.getElementById("myModal");
   const modalImg = document.getElementById("modalImage");
 
-  blogImg.addEventListener("click", function () {
-    modal.style.display = "flex";
-    modal.style.justifyContent = "center";
-    modal.style.alignItems = "center";
-    modalImg.src = this.src;
+  blogImages.forEach(image => {
+    image.addEventListener("click", function () {
+      modal.style.display = "flex";
+      modal.style.justifyContent = "center";
+      modal.style.alignItems = "center";
+      modalImg.src = this.src;
+    });
   });
 
   modal.addEventListener("click", function () {
