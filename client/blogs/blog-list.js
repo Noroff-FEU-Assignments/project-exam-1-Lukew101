@@ -4,6 +4,7 @@ const baseUrl =
 
 let pageCount = 1;
 
+const blogListSection = document.querySelector(".blog-list-section");
 const blogList = document.querySelector(".blog-list");
 const loader = document.querySelector(".loader");
 
@@ -32,7 +33,7 @@ async function fetchBlogPosts(url) {
     if (!nextPageResponse.ok) {
       moreBlogsButton.remove();
     } else {
-      blogList.appendChild(moreBlogsButton);
+      blogListSection.appendChild(moreBlogsButton);
     }
   } catch (error) {
     console.error("Error fetching posts:", error);
