@@ -11,6 +11,9 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -20,6 +23,7 @@ main {
   justify-content: center;
   position: relative;
   margin-top: 80px;
+  flex: 1 0 auto;
 }
 
 p,
@@ -220,6 +224,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  flex-shrink: 0;
 }
 
 footer h4 {
