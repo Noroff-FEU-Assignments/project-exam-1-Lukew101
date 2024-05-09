@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       switch (input.name) {
         case "name":
           if (!checkWordLength(input.value, 5)) {
-            errorMessage = "Name must be at least 6 characters";
+            errorMessage = "Must be at least 6 characters";
             allInputsValid = false;
           }
           break;
@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         case "subject":
           if (!checkWordLength(input.value, 15)) {
-            errorMessage = "Subject must be at least 16 characters";
+            errorMessage = "Must be at least 16 characters";
             allInputsValid = false;
           }
           break;
 
         case "message":
           if (!checkWordLength(input.value, 25)) {
-            errorMessage = "Message must be at least 26 characters";
+            errorMessage = "Must be at least 26 characters";
             allInputsValid = false;
           }
           break;
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!allInputsValid) {
       event.preventDefault();
       displayMessage(
-        "Invalid submission. Please correct and try again.",
+        "Invalid. Please correct and try again.",
         false
       );
       removeMessage();
