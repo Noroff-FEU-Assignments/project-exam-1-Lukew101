@@ -145,6 +145,7 @@ header nav a {
   display: block;
   padding: 0 0 20px;
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .active {
@@ -292,5 +293,10 @@ footer p {
 
   .active {
     color: #d5d4cf;
+  }
+
+  header nav a:hover {
+    background-color: #b7b8b8; 
+    color: #14293a; 
   }
 }
