@@ -16,69 +16,72 @@ document.addEventListener("DOMContentLoaded", function () {
     inputs.forEach(function (input) {
       let errorMessage = "";
 
-      // name: should be more than 5 characters
-      if (input.name === "name") {
-        if (!checkWordLength(input.value, 5)) {
-          errorMessage = "Name must be at least 5 characters";
-          allInputsValid = false;
-        }
+      switch (input.name) {
+        case "name":
+          if (!checkWordLength(input.value, 5)) {
+            errorMessage = "Name must be at least 6 characters";
+            allInputsValid = false;
+          }
+          break;
+
+        case "email":
+          if (!validateEmail(input.value)) {
+            errorMessage = "Please enter a valid email address";
+            allInputsValid = false;
+          }
+          break;
+
+        case "subject":
+          if (!checkWordLength(input.value, 15)) {
+            errorMessage = "Subject must be at least 16 characters";
+            allInputsValid = false;
+          }
+          break;
+
+        case "message":
+          if (!checkWordLength(input.value, 25)) {
+            errorMessage = "Message must be at least 26 characters";
+            allInputsValid = false;
+          }
+          break;
       }
 
-      // email: should be a valid email address
-      if (input.name === "email") {
-        if (!validateEmail(input.value)) {
-          errorMessage = "Please enter a valid email address";
-          allInputsValid = false;
-        }
-      }
-
-      // subject: should be more than 15 characters
-      if (input.name === "subject") {
-        if (!checkWordLength(input.value, 15)) {
-          errorMessage = "Subject must be at least 15 characters";
-          allInputsValid = false;
-        }
-      }
-
-      // message: should be more than 25 characters
-      if (input.name === "message") {
-        if (!checkWordLength(input.value, 25)) {
-          errorMessage = "Message must be at least 25 characters";
-          allInputsValid = false;
-        }
-      }
-
-      // If there's an error message, create and insert it
       if (errorMessage) {
-        const errorDiv = document.createElement("div");
+        const errorDiv = document.createElement("p");
         errorDiv.classList.add("error-message");
         errorDiv.textContent = errorMessage;
         input.after(errorDiv);
       }
     });
 
-    // Prevent form submission if there are invalid inputs
     if (!allInputsValid) {
       event.preventDefault();
-      displayMessage("Invalid submission. Please correct and try again.");
+      displayMessage(
+        "Invalid submission. Please correct and try again.",
+        false
+      );
       removeMessage();
     } else {
       form.reset();
-      displayMessage("Form submitted successfully!");
+      displayMessage("Form submitted successfully!", true);
       removeMessage();
     }
   });
 });
 
-function displayMessage(message) {
-  submitMessage.style.display = "block";
+function displayMessage(message, success) {
+  submitMessage.classList.remove("remove-submit-message");
   submitMessage.innerHTML = message;
+  submitMessage.classList.add("submit-message");
+  success
+    ? (submitMessage.style.color = "green")
+    : (submitMessage.style.color = "red");
 }
 
 function removeMessage() {
   setTimeout(function () {
-    submitMessage.style.display = "none";
-  }, 3000);
+    submitMessage.classList.add("remove-submit-message");
+  }, 5000);
 }
 
 function validateEmail(email) {

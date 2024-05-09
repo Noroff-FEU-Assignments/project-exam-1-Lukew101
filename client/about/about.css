@@ -1,109 +1,110 @@
 main {
-    background-color: rgba(3, 5, 7, 0.92);
-    color: #d5d4cf;
+  background-color: rgba(3, 5, 7, 0.92);
+  color: #d5d4cf;
 }
 
 li {
-    color: #d5d4cf;
+  color: #d5d4cf;
 }
 
 .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 10px;
-    gap: 20px;
-    max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  gap: 20px;
+  max-width: 800px;
 }
 
 .about-section h1 {
-    font-size: 42px;
-    text-align: center;
+  font-size: 42px;
+  text-align: center;
 }
 
 .description-wrapper {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .description-paragraph,
 li {
-    font-size: 18px;
-    line-height: 28px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .description-header {
-    font-size: 32px;
-    margin-bottom: 5px;
+  font-size: 32px;
+  margin-bottom: 5px;
 }
 
 .our-values-description {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .about-image-wrapper img {
-    width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
 }
 
 .list-leading-text {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 @media (min-width: 1234px) {
-    .about-section {
-        max-width: 1800px;
-    }
+  .about-section {
+    max-width: 1800px;
+  }
 
-    .description-wrapper {
-        margin: 0;
-    }
+  .description-wrapper {
+    margin: 0;
+  }
 
-    .our-story-wrapper,
-    .our-values-wrapper {
-        display: flex;
-        max-height: 550px;
-    }
+  .our-story-wrapper,
+  .our-values-wrapper {
+    display: flex;
+    max-height: 550px;
+    gap: 5px;
+  }
 
-    .our-mission-wrapper {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 5px;
-    }
+  .our-mission-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+  }
 
-    .our-mission-description {
-        margin-left: 10px;
-    }
-    
-    .our-story-wrapper > *,
-    .our-values-wrapper > *,
-    .our-mission-wrapper > * {
-        flex: 1;
-    }
+  .our-mission-description {
+    margin-left: 10px;
+  }
 
-    .about-section {
-        gap: 0;
-    }
+  .our-story-wrapper > *,
+  .our-values-wrapper > *,
+  .our-mission-wrapper > * {
+    flex: 1;
+  }
 
-    .about-section h1 {
-        font-size: 52px;
-        margin-bottom: 30px;
-    }
+  .about-section {
+    gap: 0;
+  }
 
-    .about-image-wrapper img {
-        width: 100%;
-        border-radius: 0px;
-    }
+  .about-section h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
 
-    .our-values-wrapper {
-        margin-bottom: 30px;
-    }
+  .about-image-wrapper img {
+    width: 100%;
+    border-radius: 0px;
+  }
 
-    .description-header {
-        font-size: 40px;
-        margin-top: 10px;
-    }
+  .our-values-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .description-header {
+    font-size: 40px;
+    margin-top: 10px;
+  }
 }
