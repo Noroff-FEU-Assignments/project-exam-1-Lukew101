@@ -221,20 +221,33 @@ h3 {
   }
 
   .seperator-div-quote {
-    display: block;
     background-color: rgba(3, 5, 7, 0.92);
     flex: 0.5;
-    color: #b6b7b6;
+    color: #d5d4cf;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  .seperator-div-quote-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .seperator-div-quote h4 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     max-width: 300px;
-    line-height: 30px;
+    line-height: 38px;
+  }
+
+  .seperator-div-quote p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 300px;
+    line-height: 28px;
+    text-align: left;
   }
 }
 
