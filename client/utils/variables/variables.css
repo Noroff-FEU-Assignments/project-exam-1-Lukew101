@@ -1,3 +1,19 @@
 :root {
     --primary-main-blue-color: #14293a;
+    --header-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    --body-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --main-button-color: #b8860b;
+    --main-button-hover-color: #daa520;
+    --h1-desktop-font-size: 38px;
+    --h2-desktop-font-size: 28px;
+    --h3-desktop-font-size: 24px;
+    --h4-desktop-font-size: 20px;
+    --h1-mobile-font-size: 32px;
+    --h2-mobile-font-size: 24px;
+    --h3-mobile-font-size: 20px;
+    --h4-mobile-font-size: 18px;
+    --p-desktop-font-size: 18px;
+    --p-mobile-font-size: 16px;
+    --p-line-height: 28px;
+    --main-button-font-size: 16px;
 }
