@@ -7,6 +7,7 @@ let pageCount = 1;
 const blogListSection = document.querySelector(".blog-list-section");
 const blogList = document.querySelector(".blog-list");
 const loader = document.querySelector(".loader");
+const searchBarWrapper = document.querySelector(".search-bar-wrapper");
 
 function getUrlWithPageCount(page = pageCount) {
   return `${baseUrl}?&page=${page}`;
@@ -27,9 +28,11 @@ async function fetchBlogPosts(url) {
     const response = await fetch(url);
     const posts = await response.json();
 
+    createFilterBar(posts);
     showBlogPosts(posts);
 
     const nextPageResponse = await fetch(getUrlWithPageCount(pageCount + 1));
+
     if (!nextPageResponse.ok) {
       moreBlogsButton.remove();
     } else {
@@ -41,6 +44,8 @@ async function fetchBlogPosts(url) {
 }
 
 function showBlogPosts(posts) {
+  blogList.innerHTML = "";
+
   for (let post of posts) {
     const postId = post.id;
     const posthref = `./specificBlog/blog.html?id=${postId}`;
@@ -50,6 +55,26 @@ function showBlogPosts(posts) {
     blogList.appendChild(blogPostElement);
   }
   loader.classList.remove("loader");
+}
+
+function searchPosts(posts, searchInput) {
+  const searchTerm = searchInput.value.toLowerCase();
+  const filteredPosts = posts.filter(post => post.title.rendered.toLowerCase().includes(searchTerm));
+  showBlogPosts(filteredPosts);
+}
+
+function createFilterBar(posts) {
+  const filterBar = document.createElement("input");
+
+  filterBar.classList.add("filter-bar");
+  filterBar.setAttribute("type", "text");
+  filterBar.setAttribute("placeholder", "Search for a blog post...");
+  searchBarWrapper.appendChild(filterBar);
+  
+  const searchInput = document.querySelector('.filter-bar');
+  searchInput.addEventListener('input', function() {
+    searchPosts(posts, searchInput);
+  });
 }
 
 fetchBlogPosts(getUrlWithPageCount());

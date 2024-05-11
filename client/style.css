@@ -25,7 +25,7 @@ main {
   flex: 1 0 auto;
 }
 
-p,a, li, ul, label, button {
+p,a, li, ul, label, button, input {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -181,14 +181,12 @@ header nav a {
 }
 
 .blog-post-title {
+  text-align: center;
   line-height: 1.5em;
-  height: 3em;
+  height: 4em;
   overflow: scroll;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;

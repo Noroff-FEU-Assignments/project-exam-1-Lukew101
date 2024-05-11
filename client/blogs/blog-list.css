@@ -14,6 +14,8 @@
 .blog-list-section-paragraph {
   margin: 0 10px;
   max-width: 800px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .blog-list {
@@ -30,6 +32,7 @@
 .contact-here {
   color: #14293a;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .show-more-button {
@@ -38,6 +41,33 @@
   color: #14293a;
   text-decoration: underline;
   cursor: pointer;
+  font-size: 18px;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 280px;
+}
+
+.filter-bar {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #d5d4cf;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  height: 25px;
   font-size: 16px;
 }
 
+.filter-bar:hover {
+  background-color: #e9ecef;
+}
+
+.filter-bar:focus {
+  border-color: #e9ecef;
+  outline: none;
+}
