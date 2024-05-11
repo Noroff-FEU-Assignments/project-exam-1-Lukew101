@@ -56,10 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!allInputsValid) {
       event.preventDefault();
-      displayMessage(
-        "Invalid. Please correct and try again.",
-        false
-      );
+      displayMessage("Invalid. Please correct and try again.", false);
       removeMessage();
     } else {
       form.reset();

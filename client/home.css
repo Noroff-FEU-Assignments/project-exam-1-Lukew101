@@ -234,14 +234,14 @@ h3 {
     gap: 10px;
   }
 
-  .seperator-div-quote h4 {
-    font-size: 24px;
+  .seperator-div-content-quote {
+    font-size: 34px;
     font-weight: 600;
     max-width: 300px;
     line-height: 38px;
   }
 
-  .seperator-div-quote p {
+  .seperator-div-content-author {
     font-size: 18px;
     font-weight: 400;
     max-width: 300px;

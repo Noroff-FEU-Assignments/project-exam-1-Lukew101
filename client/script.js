@@ -2,7 +2,6 @@ const burger = document.querySelector(".burger-menu");
 const nav = document.querySelector(".header-nav");
 const overlay = document.querySelector(".overlay");
 
-// Nav menu
 const navSlide = () => {
   burger.addEventListener("click", () => {
     if (nav.classList.contains("nav-active")) {

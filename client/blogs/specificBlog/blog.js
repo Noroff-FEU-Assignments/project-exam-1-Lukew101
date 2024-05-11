@@ -38,7 +38,7 @@ function showBlogPost(blogPost) {
   const modal = document.getElementById("myModal");
   const modalImg = document.getElementById("modalImage");
 
-  blogImages.forEach(image => {
+  blogImages.forEach((image) => {
     image.addEventListener("click", function () {
       modal.style.display = "flex";
       modal.style.justifyContent = "center";
