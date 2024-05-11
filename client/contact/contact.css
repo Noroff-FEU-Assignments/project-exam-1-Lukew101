@@ -18,18 +18,18 @@ main {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: var(--h1-mobile-font-size);
   margin: 20px 0;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: var(--h2-mobile-font-size);
   margin-bottom: 10px;
 }
 
 .contribute-section p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: var(--p-mobile-font-size);
+  line-height: var(--p-mobile-line-height);
 }
 
 #contact-form {
@@ -102,4 +102,19 @@ h2 {
 
 .remove-submit-message {
   display: none;
+}
+
+@media (min-width: 1234px) {
+  h1 {
+    font-size: var(--h1-desktop-font-size);
+  }
+
+  h2 {
+    font-size: var(--h2-desktop-font-size);
+  }
+
+  .contribute-section p {
+    font-size: var(--p-desktop-font-size);
+    line-height: var(--p-desktop-line-height);
+  }
 }

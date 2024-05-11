@@ -1,10 +1,12 @@
+@import url('./utils/variables/variables.css');
+
 h1,
 h2,
 h3,
 h4 {
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--header-font-family);
 }
 
 body {
@@ -28,7 +30,7 @@ main {
 p,a, li, ul, label, button, input {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--body-font-family);
 }
 
 a,ul,li {
@@ -58,7 +60,6 @@ p {
   display: block;
 }
 
-/* Header */
 header {
   display: flex;
   position: fixed;
@@ -68,12 +69,12 @@ header {
   height: 80px;
   justify-content: space-between;
   align-items: center;
-  background: #14293a;
+  background: var(--primary-main-blue-color);
   z-index: 1000;
 }
 
 nav li a {
-  color: #14293a;
+  color: var(--primary-main-blue-color);
   font-size: 1.4rem;
 }
 
@@ -150,7 +151,7 @@ header nav a {
 
 .active {
   text-decoration: underline;
-  color: #14293a;
+  color: var(--primary-main-blue-color);
 }
 
 .blog-post {
@@ -188,7 +189,7 @@ header nav a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   font-size: 1.5rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--body-font-family);
   font-weight: 600;
 }
 
@@ -199,44 +200,33 @@ header nav a {
 .main-cta-button {
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: #b8860b;
-  color: #14293a;
+  background-color: var(--main-button-color);
+  color: var(--primary-main-blue-color);
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
   border: none;
   height: fit-content;
+  font-size: var(--main-button-font-size);
 }
 
 .main-cta-button:hover {
-  background-color: #daa520;
+  background-color: var(--main-button-hover-color);
 }
 
 footer {
   height: 100px;
-  background: #14293a;
-  color: #b7b8b8;
+  background: var(--primary-main-blue-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;
   flex-shrink: 0;
-}
-
-footer h4 {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-footer p {
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .loader {
   border: 16px solid #f3f3f3;
-  border-top: 16px solid #14293a;
+  border-top: 16px solid var(--primary-main-blue-color);
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -255,7 +245,6 @@ footer p {
 
 
 @media (min-width: 1034px) {
-  /* Header */
   .burger-menu {
     display: none;
   }
@@ -264,7 +253,7 @@ footer p {
     position: relative;
     top: 0;
     right: 0;
-    background: #14293a;
+    background: var(--primary-main-blue-color);
     transform: none;
     width: 100%;
     align-items: end;
@@ -295,6 +284,6 @@ footer p {
 
   header nav a:hover {
     background-color: #b7b8b8; 
-    color: #14293a; 
+    color: var(--primary-main-blue-color); 
   }
 }

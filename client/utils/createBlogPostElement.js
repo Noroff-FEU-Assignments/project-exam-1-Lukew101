@@ -3,7 +3,7 @@ export const createBlogPostElement = (post, href) => {
   postElement.href = `${href}`;
   postElement.classList.add("blog-post");
 
-  const titleElement = document.createElement("h4");
+  const titleElement = document.createElement("h2");
   titleElement.classList.add("blog-post-title");
   titleElement.textContent = post.title.rendered;
 

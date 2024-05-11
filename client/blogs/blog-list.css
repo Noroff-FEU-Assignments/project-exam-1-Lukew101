@@ -8,14 +8,14 @@
 .blog-list-section-title {
   margin: 20px 0 10px 0;
   text-align: center;
-  font-size: 38px;
+  font-size: var(--h1-mobile-font-size);
 }
 
 .blog-list-section-paragraph {
   margin: 0 10px;
   max-width: 800px;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: var(--p-mobile-font-size);
+  line-height: var(--p-mobile-line-height);
 }
 
 .blog-list {
@@ -30,7 +30,7 @@
 }
 
 .contact-here {
-  color: #14293a;
+  color: var(--primary-main-blue-color);
   font-weight: 600;
   text-decoration: underline;
 }
@@ -38,7 +38,7 @@
 .show-more-button {
   background: none;
   border: none;
-  color: #14293a;
+  color: var(--primary-main-blue-color);
   text-decoration: underline;
   cursor: pointer;
   font-size: 18px;
@@ -72,4 +72,15 @@
 .filter-bar:focus {
   border-color: #e9ecef;
   outline: none;
+}
+
+@media (min-width: 1234px) {
+  .blog-list-section-title {
+    font-size: var(--h1-desktop-font-size);
+  }
+
+  .blog-list-section-paragraph {
+    font-size: var(--p-desktop-font-size);
+    line-height: var(--p-desktop-line-height);
+  }
 }

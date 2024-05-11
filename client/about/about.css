@@ -17,7 +17,7 @@ li {
 }
 
 .about-section h1 {
-  font-size: 42px;
+  font-size: var(--h1-mobile-font-size);
   text-align: center;
 }
 
@@ -27,12 +27,12 @@ li {
 
 .description-paragraph,
 li {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: var(--p-mobile-font-size);
+  line-height: var(--p-mobile-line-height);
 }
 
 .description-header {
-  font-size: 32px;
+  font-size: var(--h2-mobile-font-size);
   margin-bottom: 5px;
 }
 
@@ -58,8 +58,22 @@ li {
     max-width: 1800px;
   }
 
+  .about-section h1 {
+    font-size: var(--h1-desktop-font-size);
+  }
+
+  .description-header {
+    font-size: var(--h2-desktop-font-size);
+  }
+
   .description-wrapper {
     margin: 0;
+  }
+
+  .description-paragraph,
+  li {
+    font-size: var(--p-desktop-font-size);
+    line-height: var(--p-desktop-line-height);
   }
 
   .our-story-wrapper,

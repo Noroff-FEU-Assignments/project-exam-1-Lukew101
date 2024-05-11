@@ -1,7 +1,7 @@
 .specific-blog-title {
   text-align: center;
   margin: 30px 0 20px 0;
-  font-size: 38px;
+  font-size: var(--h1-mobile-font-size);
 }
 
 .specific-blog-section {
@@ -37,6 +37,8 @@
 
 .specific-blog-post > p {
   margin-bottom: 10px;
+  font-size: var(--p-mobile-font-size);
+  line-height: var(--p-mobile-line-height);
 }
 
 .modal {
@@ -95,4 +97,15 @@ footer {
   .specific-blog-content > p {
     margin-bottom: 10px;
   }
-} 
+}
+
+@media (min-width: 1234px) {
+  .specific-blog-title {
+    font-size: var(--h1-desktop-font-size);
+  }
+
+  .specific-blog-post > p {
+    font-size: var(--p-desktop-font-size);
+    line-height: var(--p-desktop-line-height);
+  }
+}

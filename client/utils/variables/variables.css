@@ -4,16 +4,13 @@
     --body-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --main-button-color: #b8860b;
     --main-button-hover-color: #daa520;
-    --h1-desktop-font-size: 38px;
+    --main-button-font-size: 20px;
+    --h1-mobile-font-size: 42px;
+    --h2-mobile-font-size: 32px;
+    --h1-desktop-font-size: 54px;
     --h2-desktop-font-size: 28px;
-    --h3-desktop-font-size: 24px;
-    --h4-desktop-font-size: 20px;
-    --h1-mobile-font-size: 32px;
-    --h2-mobile-font-size: 24px;
-    --h3-mobile-font-size: 20px;
-    --h4-mobile-font-size: 18px;
-    --p-desktop-font-size: 18px;
-    --p-mobile-font-size: 16px;
-    --p-line-height: 28px;
-    --main-button-font-size: 16px;
+    --p-mobile-font-size: 18px;
+    --p-desktop-font-size: 20px;
+    --p-mobile-line-height: 28px;
+    --p-desktop-line-height: 1.8rem; 
 }

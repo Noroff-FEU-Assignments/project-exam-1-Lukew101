@@ -18,8 +18,8 @@ h3 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: var(--p-mobile-font-size);
+  line-height: var(--p-mobile-line-height);
 }
 
 a {
@@ -30,7 +30,7 @@ h1,
 h2,
 h2,
 h3 {
-  color: #14293a;
+  color: var(--primary-main-blue-color);
 }
 
 /* Home Page top section */
@@ -264,8 +264,8 @@ h3 {
   }
 
   p {
-    line-height: 1.8rem;
-    font-size: 1.2rem;
+    font-size: var(--p-desktop-font-size);
+    line-height: var(--p-desktop-line-height);
   }
 
   .latest-posts-carousel {
