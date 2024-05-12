@@ -33,7 +33,6 @@ h3 {
   color: var(--primary-main-blue-color);
 }
 
-/* Home Page top section */
 .home-title-slogan {
   margin: 20px 10px;
   text-align: center;
@@ -130,7 +129,6 @@ h3 {
   margin-bottom: gap;
 }
 
-/* Latest blogs Carousel */
 .latest-posts-carousel {
   display: flex;
   overflow: hidden;
@@ -211,12 +209,29 @@ h3 {
     flex: 1;
   }
 
+  .home-blog-section-image {
+    width: 50%;
+  }
+
+  .home-top-description {
+    flex: 1; 
+  }
+  
+  .home-top-image {
+    flex: 1; 
+    max-width: 50%; 
+  }
+
   .home-image-section-seperator {
     flex: 0.5;
   }
 
   .seperator-div {
     min-height: 500px;
+  }
+
+  .home-image-section-seperator {
+    width: 50%;
   }
 
   .seperator-div-quote {
@@ -235,9 +250,9 @@ h3 {
   }
 
   .seperator-div-content-quote {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 600;
-    max-width: 300px;
+    max-width: 380px;
     line-height: 38px;
   }
 

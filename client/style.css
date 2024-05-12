@@ -200,6 +200,15 @@ header nav a {
   font-weight: 600;
 }
 
+.blog-post-title::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-post-title {
+  scrollbar-width: none; 
+  scrollbar-color: transparent transparent; 
+}
+
 .blog-post-date {
   font-weight: 600;
 }
