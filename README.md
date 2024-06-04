@@ -25,8 +25,6 @@ You can list a the tech stack that you've used over here
 
 ## Getting Started
 
-### Installing
-
 1. Clone the repo:
 
 ```bash
