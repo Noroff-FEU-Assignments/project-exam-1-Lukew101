@@ -4,9 +4,9 @@
 The server is currently not running due to a free subscription expiring. Please find two videos below demonstrating the application.
 
 #### Desktop
-![Download video here](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/project-exam-recording-desktop-view.mp4)
+[Download video here](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/project-exam-recording-desktop-view.mp4)
 #### Mobile
-![Download video here](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/project-exam-recording-mobile-view.mp4)
+[Download video here](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/project-exam-recording-mobile-view.mp4)
 
 ![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/fitness-together-homepage.png)
 
