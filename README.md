@@ -1,68 +1,50 @@
-## Project Exam 1
+# Fitness Together
+### **Important note**
+The server is currently not running due to a free subscription expiring. Please find two videos below demonstrating the application.
+#### Desktop
+![video](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/project-exam-recording-desktop-view.mp4)
 
-## Goal
 
-To put into practice the skills learned over your first year of studies.
+![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+A simple overview of the use/purpose of the project.
 
-### Home Page
+## Description
 
-The home page should feature a 'Latest Posts' section, designed as a carousel (slider) for the desktop version. As an example, you could display four posts at a time, although you're welcome to adjust this number to better suit your design. Users should be able to click an arrow on the right to scroll through to the next set of posts, and an arrow on the left to view the previous set. For the mobile version, you are free to alter the layout as you deem appropriate, without being tied to a carousel format.
+Fitness Together was created to empower individuals to achieve their health and fitness goals by providing personalized guidance, support, and resources. The aim is to offer a vast amount of different blogs for people at all different fitness levels Whether your aim is to shed excess weight, sculpt lean muscle, enhance endurance, or simply enhance your overall well-being.
 
-### Blog Page
+## Built With
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+You can list a the tech stack that you've used over here
+- HTML
+- CSS
+- Vanilla JavaScript
 
-### Blog Specific Page
+## Getting Started
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+### Installing
 
-If images on the blog specific page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+1. Clone the repo:
 
-### Contact page
+```bash
+[git clone git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101.git)
+```
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+2. Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension on Visual Studio Code
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+3. Run the live server from the `index.html` file
 
-### WordPress
+## Contact
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+Please use the following to contact me:
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
+### Socials
+[My LinkedIn page](https://www.linkedin.com/in/luke-williams-b693421b6/)
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
+## License
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
-## Level 1 Process
+## Acknowledgments
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
-
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
-
+This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
