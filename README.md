@@ -8,7 +8,7 @@ The server is currently not running due to a free subscription expiring. Please 
 #### Mobile
 ![Download video here](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/project-exam-recording-mobile-view.mp4)
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.pnghttps://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/fitness-together-homepage.png)
+![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/fitness-together-homepage.png)
 
 This project is for an project exam at Noroff where we were required to create a blog site.
 
