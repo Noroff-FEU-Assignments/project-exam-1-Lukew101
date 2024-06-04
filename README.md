@@ -17,8 +17,6 @@ This project is for an project exam at Noroff where we were required to create a
 Fitness Together was created to empower individuals to achieve their health and fitness goals by providing personalized guidance, support, and resources. The aim is to offer a vast amount of different blogs for people at all different fitness levels Whether your aim is to shed excess weight, sculpt lean muscle, enhance endurance, or simply enhance your overall well-being.
 
 ## Built With
-
-You can list a the tech stack that you've used over here
 - HTML
 - CSS
 - Vanilla JavaScript
