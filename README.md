@@ -1,6 +1,6 @@
 # Fitness Together
 
-### **Important note**
+### *Important note*
 The server is currently not running due to a free subscription expiring. Please find two videos below demonstrating the application.
 
 #### Desktop
