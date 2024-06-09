@@ -10,16 +10,17 @@ The server is currently not running due to a free subscription expiring. Please 
 
 ![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-Lukew101/raw/main/assets/fitness-together-homepage.png)
 
-This project is for an project exam at Noroff where we were required to create a blog site.
+This website was developed as part of a project exam at Noroff. The assignment was to create a blog site.
 
 ## Description
 
-Fitness Together was created to empower individuals to achieve their health and fitness goals by providing personalized guidance, support, and resources. The aim is to offer a vast amount of different blogs for people at all different fitness levels Whether your aim is to shed excess weight, sculpt lean muscle, enhance endurance, or simply enhance your overall well-being.
+The Fitness Together site was created to empower individuals to achieve their health and fitness goals by providing guidance, support, and resources. The aim of the site is to offer blogs for people at all different fitness levels so they can access the tools needed to improve their fitness training.
 
 ## Built With
 - HTML
 - CSS
 - Vanilla JavaScript
+- WordPress
 
 ## Getting Started
 
